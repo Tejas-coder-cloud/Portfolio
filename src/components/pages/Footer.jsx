@@ -63,6 +63,12 @@ function Footer() {
                         </h3>
 
                         <div className="flex flex-col gap-4">
+                            <Link
+                                to="/"
+                                className="text-slate-300 hover:text-cyan-400 transition"
+                            >
+                                Home
+                            </Link>
 
                             <Link
                                 to="/about"
@@ -78,7 +84,7 @@ function Footer() {
                                 Projects
                             </Link>
 
-                          
+
                             <Link
                                 to="/contact"
                                 className="text-slate-300 hover:text-cyan-400 transition"
