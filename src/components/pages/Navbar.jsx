@@ -9,6 +9,8 @@ import {
   FaUser,
   FaRocket,
   FaPhone,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 
 function Navbar() {
@@ -30,9 +32,9 @@ function Navbar() {
 
         <button
           onClick={() => setIsOpen(true)}
-          className="text-white text-4xl hover:text-cyan-400 transition"
+          className="text-white text-3xl hover:text-cyan-400 transition cursor-pointer"
         >
-          ☰
+          <FaBars />
         </button>
 
       </nav>
@@ -49,15 +51,15 @@ function Navbar() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="
-            fixed
-            inset-0
-            z-50
-            bg-gradient-to-br
-            from-slate-950
-            via-slate-900
-            to-black
-            overflow-y-auto
-          "
+              fixed
+              inset-0
+              z-50
+              bg-gradient-to-br
+              from-slate-950
+              via-slate-900
+              to-black
+              overflow-y-auto
+            "
           >
 
             {/* Background Glow */}
@@ -69,22 +71,21 @@ function Navbar() {
             {/* Close Button */}
 
             <button
-              onClick={() => {
-                console.log("Close clicked ")
-                setIsOpen(false)}}
+              onClick={() => setIsOpen(false)}
               className="
                 absolute
                 top-6
-                z-999
-
                 right-6
-                text-5xl
+                z-[100]
+                text-3xl
+                md:text-4xl
                 text-white
                 hover:text-cyan-400
                 transition
+                cursor-pointer
               "
             >
-              ×
+              <FaTimes />
             </button>
 
             {/* Content */}
@@ -93,11 +94,11 @@ function Navbar() {
 
               {/* Heading */}
 
-              <h2 className="text-4xl md:text-5xl font-bold text-white ">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
                 Menu
               </h2>
 
-              <p className="text-sm md:text-base text-slate-400">
+              <p className="text-sm md:text-base text-slate-400 mb-8">
                 Navigate through my portfolio
               </p>
 
@@ -109,18 +110,19 @@ function Navbar() {
                   to="/"
                   onClick={() => setIsOpen(false)}
                   className="
-                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
                     px-6 py-4
-                    text-xl text-slate-200
+                    text-lg md:text-xl
+                    text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
                     hover:text-cyan-400
-                    hover:scale-105
+                    hover:scale-[1.03]
                     transition-all duration-300
+                    cursor-pointer
                   "
                 >
                   <FaHome />
@@ -131,18 +133,19 @@ function Navbar() {
                   to="/about"
                   onClick={() => setIsOpen(false)}
                   className="
-                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
                     px-6 py-4
-                    text-xl text-slate-200
+                    text-lg md:text-xl
+                    text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
                     hover:text-cyan-400
-                    hover:scale-105
+                    hover:scale-[1.03]
                     transition-all duration-300
+                    cursor-pointer
                   "
                 >
                   <FaUser />
@@ -153,18 +156,19 @@ function Navbar() {
                   to="/projects"
                   onClick={() => setIsOpen(false)}
                   className="
-                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
                     px-6 py-4
-                    text-xl text-slate-200
+                    text-lg md:text-xl
+                    text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
                     hover:text-cyan-400
-                    hover:scale-105
+                    hover:scale-[1.03]
                     transition-all duration-300
+                    cursor-pointer
                   "
                 >
                   <FaRocket />
@@ -175,18 +179,19 @@ function Navbar() {
                   to="/contact"
                   onClick={() => setIsOpen(false)}
                   className="
-                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
                     px-6 py-4
-                    text-xl text-slate-200
+                    text-lg md:text-xl
+                    text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
                     hover:text-cyan-400
-                    hover:scale-105
+                    hover:scale-[1.03]
                     transition-all duration-300
+                    cursor-pointer
                   "
                 >
                   <FaPhone />
@@ -211,7 +216,9 @@ function Navbar() {
                     text-xl text-slate-300
                     hover:bg-cyan-500
                     hover:text-black
-                    transition
+                    hover:scale-110
+                    transition-all
+                    cursor-pointer
                   "
                 >
                   <FaGithub />
@@ -229,7 +236,9 @@ function Navbar() {
                     text-xl text-slate-300
                     hover:bg-cyan-500
                     hover:text-black
-                    transition
+                    hover:scale-110
+                    transition-all
+                    cursor-pointer
                   "
                 >
                   <FaLinkedin />
@@ -245,7 +254,9 @@ function Navbar() {
                     text-xl text-slate-300
                     hover:bg-cyan-500
                     hover:text-black
-                    transition
+                    hover:scale-110
+                    transition-all
+                    cursor-pointer
                   "
                 >
                   <FaEnvelope />
@@ -260,16 +271,19 @@ function Navbar() {
                 download
                 className="
                   mt-10
-                  w-full max-w-md
+                  w-full
+                  max-w-md
                   text-center
-                  px-5 py-3
+                  px-5
+                  py-3
                   rounded-2xl
                   bg-cyan-500
                   text-black
                   font-semibold
                   hover:bg-cyan-400
-                  transition
-                  text-base
+                  hover:scale-[1.02]
+                  transition-all
+                  cursor-pointer
                 "
               >
                 Download Resume
