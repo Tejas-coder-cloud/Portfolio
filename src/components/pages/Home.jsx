@@ -76,7 +76,18 @@ function Home() {
             href="/Tejas_Resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="bg-cyan-500 hover:bg-cyan-600 text-black font-semibold px-8 py-4 rounded-xl transition"
+            className="
+    px-10 py-5
+    rounded-2xl
+    bg-cyan-500
+    text-black
+    font-semibold
+    hover:bg-cyan-400
+    hover:scale-105
+    transition-all
+    duration-300
+    cursor-pointer
+  "
           >
             View Resume
           </a>
@@ -85,7 +96,18 @@ function Home() {
             href="https://github.com/Tejas-coder-cloud"
             target="_blank"
             rel="noreferrer"
-            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-500 hover:text-black px-8 py-4 rounded-xl transition"
+            className="
+    px-10 py-5
+    rounded-2xl
+    bg-slate-800
+    text-white
+    font-semibold
+    hover:bg-slate-700
+    hover:scale-105
+    transition-all
+    duration-300
+    cursor-pointer
+  "
           >
             GitHub
           </a>
