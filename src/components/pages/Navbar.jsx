@@ -93,11 +93,11 @@ function Navbar() {
 
               {/* Heading */}
 
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <h2 className="text-4xl md:text-5xl font-bold text-white ">
                 Menu
               </h2>
 
-              <p className="text-slate-400 mb-10 text-center">
+              <p className="text-sm md:text-base text-slate-400">
                 Navigate through my portfolio
               </p>
 
@@ -109,11 +109,12 @@ function Navbar() {
                   to="/"
                   onClick={() => setIsOpen(false)}
                   className="
+                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
-                    px-6 py-5
+                    px-6 py-4
                     text-xl text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
@@ -130,11 +131,12 @@ function Navbar() {
                   to="/about"
                   onClick={() => setIsOpen(false)}
                   className="
+                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
-                    px-6 py-5
+                    px-6 py-4
                     text-xl text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
@@ -151,11 +153,12 @@ function Navbar() {
                   to="/projects"
                   onClick={() => setIsOpen(false)}
                   className="
+                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
-                    px-6 py-5
+                    px-6 py-4
                     text-xl text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
@@ -172,11 +175,12 @@ function Navbar() {
                   to="/contact"
                   onClick={() => setIsOpen(false)}
                   className="
+                    md:text-2xl
                     flex items-center gap-4
                     bg-slate-900/70
                     border border-slate-800
                     rounded-2xl
-                    px-6 py-5
+                    px-6 py-4
                     text-xl text-slate-200
                     hover:border-cyan-400
                     hover:bg-cyan-500/10
@@ -258,13 +262,14 @@ function Navbar() {
                   mt-10
                   w-full max-w-md
                   text-center
-                  px-6 py-4
+                  px-5 py-3
                   rounded-2xl
                   bg-cyan-500
                   text-black
                   font-semibold
                   hover:bg-cyan-400
                   transition
+                  text-base
                 "
               >
                 Download Resume
