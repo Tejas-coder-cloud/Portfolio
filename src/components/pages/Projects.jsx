@@ -16,7 +16,129 @@ function Projects() {
           Featured <span className="text-cyan-400">Projects</span>
         </motion.h2>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* NotesFlow */}
+
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  whileHover={{ y: -10 }}
+  transition={{ duration: 0.4 }}
+  className="
+    bg-gradient-to-br
+    from-slate-900
+    to-slate-950
+    border border-slate-800
+    rounded-3xl
+    overflow-hidden
+    hover:border-emerald-400
+    transition-all
+  "
+>
+
+  <div className="p-8">
+
+    <div className="flex justify-between items-start">
+
+      <span
+        className="
+          px-4 py-1
+          rounded-full
+          bg-emerald-500/10
+          text-emerald-400
+          text-sm
+          font-medium
+        "
+      >
+        MERN Stack
+      </span>
+
+      <div className="flex gap-3">
+
+        <a
+          href="https://github.com/Tejas-coder-cloud/NotesFlow"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-800 p-3 rounded-xl hover:bg-emerald-500 transition"
+        >
+          <FaGithub />
+        </a>
+
+        <a
+          href="https://notes-flow-nu.vercel.app/dashboard"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-800 p-3 rounded-xl hover:bg-emerald-500 transition"
+        >
+          <FaExternalLinkAlt />
+        </a>
+
+      </div>
+
+    </div>
+
+    <h3 className="text-3xl font-bold mt-6 text-emerald-400">
+      NotesFlow
+    </h3>
+
+    <p className="text-slate-400 mt-2">
+      Secure Notes Management Platform
+    </p>
+
+  </div>
+
+  <div className="border-t border-slate-800 p-8">
+
+    <p className="text-slate-300 leading-8">
+      A full-stack MERN application that allows users to securely
+      create, edit, organize, search and delete notes using JWT
+      authentication and MongoDB.
+    </p>
+
+    <ul className="space-y-3 mt-6 text-slate-400">
+
+      <li>▸ JWT Authentication</li>
+
+      <li>▸ Create, Update & Delete Notes</li>
+
+      <li>▸ Instant Search Functionality</li>
+
+      <li>▸ Responsive MERN Stack Application</li>
+
+    </ul>
+
+    <h4 className="mt-8 text-slate-500 uppercase text-sm tracking-widest">
+      Tech Stack
+    </h4>
+
+    <div className="flex flex-wrap gap-3 mt-4">
+
+      {[
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Tailwind CSS",
+      ].map((tech) => (
+        <span
+          key={tech}
+          className="
+            px-4 py-2
+            bg-slate-800
+            rounded-full
+            text-sm
+          "
+        >
+          {tech}
+        </span>
+      ))}
+
+    </div>
+
+  </div>
+
+</motion.div>
 
           {/* Resume JD Matcher */}
 
