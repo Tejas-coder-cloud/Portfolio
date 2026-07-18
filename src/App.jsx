@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/pages/Navbar";
 import Home from "./components/pages/Home";
+import Experience from "./components/pages/Experience";
 import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
@@ -32,8 +33,13 @@ function App() {
             path="/projects"
             element={<Projects />}
           />
-
           
+          <Route
+            path="/experience"
+            element={<Experience />}
+          />
+
+
 
           <Route
             path="/contact"

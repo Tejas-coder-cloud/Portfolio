@@ -76,6 +76,18 @@ function Footer() {
                             >
                                 About
                             </Link>
+                            <Link
+                                to="/experience"
+                                className="
+        text-slate-300
+        hover:text-cyan-400
+        transition
+        duration-300
+        cursor-pointer
+    "
+                            >
+                                Experience
+                            </Link>
 
                             <Link
                                 to="/projects"

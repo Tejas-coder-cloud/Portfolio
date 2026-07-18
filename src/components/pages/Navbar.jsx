@@ -12,6 +12,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -173,6 +174,28 @@ function Navbar() {
                 >
                   <FaRocket />
                   Projects
+                </Link>
+                <Link
+                  to="/experience"
+                  onClick={() => setIsOpen(false)}
+                  className="
+    cursor-pointer
+    md:text-xl
+    text-lg
+    flex items-center gap-4
+    bg-slate-900/70
+    border border-slate-800
+    rounded-2xl
+    px-6 py-4
+    text-slate-200
+    hover:border-cyan-400
+    hover:bg-cyan-500/10
+    hover:text-cyan-400
+    transition-all duration-300
+  "
+                >
+                  <FaBriefcase />
+                  Experience
                 </Link>
 
                 <Link
