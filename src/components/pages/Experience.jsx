@@ -81,21 +81,25 @@ function Experience() {
                     </h2>
 
                     <p className="text-cyan-400 mt-1">
-                      Artificial Intelligence Intern
-                    </p>
+  AICTE Intern – Generative AI & Agentic Systems Engineering
+</p>
 
                   </div>
 
                 </div>
 
                 <p className="text-slate-400 mt-6 leading-8">
-                  Successfully completed the
-                  <span className="text-cyan-400">
-                    {" "}Lenovo LEAP NextGen Scholar Program{" "}
-                  </span>
-                  focused on Artificial Intelligence, Machine Learning,
-                  and practical problem-solving through hands-on learning.
-                </p>
+  Successfully completed a
+  <span className="text-cyan-400">
+    {" "}6-week AICTE Internship{" "}
+  </span>
+  on <strong>Generative AI & Agentic Systems Engineering</strong>
+  under the Lenovo LEAP NextGen Scholar Program,
+  implemented by BharatCares in association with AICTE.
+  The internship focused on modern Generative AI,
+  Agentic AI systems, practical applications,
+  and industry-oriented learning.
+</p>
 
               </div>
 
@@ -105,15 +109,13 @@ function Experience() {
 
                   <FaCalendarAlt />
 
-                  <span>June 2026</span>
+                  <span>June-July 2026</span>
 
                 </div>
 
                 <div className="mt-4 inline-block px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400">
-
-                  Grade B
-
-                </div>
+  6-Week Internship
+</div>
 
               </div>
 
@@ -130,13 +132,13 @@ function Experience() {
             <div className="grid md:grid-cols-2 gap-5">
 
               {[
-                "Completed 60+ Hours of AI Learning",
-                "Artificial Intelligence Fundamentals",
-                "Machine Learning Concepts",
-                "Problem Solving & Analytical Thinking",
-                "Industry Exposure through Lenovo",
-                "Successfully Awarded Grade B",
-              ].map((item) => (
+  "Completed a 6-week AICTE Internship",
+  "Generative AI Fundamentals",
+  "Agentic AI Systems Engineering",
+  "Industry-oriented Learning under Lenovo LEAP",
+  "Hands-on AI Problem Solving",
+  "Official Internship Certificate Awarded",
+].map((item) => (
 
                 <div
                   key={item}
@@ -162,12 +164,13 @@ function Experience() {
             <div className="flex flex-wrap gap-4 mt-6">
 
               {[
-                "Artificial Intelligence",
-                "Machine Learning",
-                "Python",
-                "Problem Solving",
-                "Data Analysis",
-              ].map((tech) => (
+  "Generative AI",
+  "Agentic AI",
+  "Artificial Intelligence",
+  "Python",
+  "Prompt Engineering",
+  "Machine Learning",
+].map((tech) => (
 
                 <span
                   key={tech}
@@ -190,7 +193,7 @@ function Experience() {
             </div>
 
             <a
-              href="/Lenovo_skill_india_assesment_certificate.pdf"
+              href="/internship_certificate.pdf"
               target="_blank"
               rel="noreferrer"
               className="
